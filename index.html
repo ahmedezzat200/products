@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="social">
+
+    </div>
+    <div class="form-container">
+        <form class="form" id="form">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" id="firstName" maxlength="10">
+                <span class="invalid" id="invalidfname">Please enter valid First Name</span>
+            </div>  
+
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text" id="lastName" maxlength="10">
+                <span class="invalid" id="invalidlname">Please enter valid Last Name</span>
+            </div>  
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" id="phoneNumber" maxlength="11">
+                <span class="invalid" id="invalidphone">Please enter valid Phone Number</span>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email">
+                <span class="invalid" id="invalidmail">Please enter valid Email</span>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password">
+                <span class="invalid" id="invalidpassword">Please enter valid Password</span>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <span class="invalid" id="invalidconfirmpassword">Passwords do not match</span>
+            </div>
+
+            <div class="input-group">
+                <label>Image</label>
+                <input type="file" id="image" accept=".jpg, .jpeg, .png">
+                <span class="invalid" id="invalidimage">Please insert a valid file with max size 5MB</span>
+            </div>
+
+            <button id="formBtn">Submit</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
